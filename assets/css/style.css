@@ -1,0 +1,15 @@
+.uvi-low {
+    color: green;
+}
+
+.uvi-mid {
+    color: yellow;
+}
+
+.uvi-high {
+    color: orange;
+}
+
+.uvi-extreme {
+    color: red;
+}
