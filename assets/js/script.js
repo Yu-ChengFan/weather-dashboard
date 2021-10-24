@@ -88,13 +88,13 @@ let displayWeather = function(data){
     wind.textContent = "Wind: " + data.current.wind_speed + " MPH"
     humid.textContent = "Humidity: " + data.current.humidity + " %"
     if (data.current.uvi < 2) {
-        uv.innerHTML = "UV Index: " + "<span class='uvi-low'>" + data.current.uvi + "</span>"
+        uv.innerHTML = "UV: " + "<span class='uvi-low'>" + data.current.uvi + "</span>"
     } else if (data.current.uvi < 5) {
-        uv.innerHTML = "UV Index: " + "<span class='uvi-mid'>" + data.current.uvi + "</span>"
+        uv.innerHTML = "UV: " + "<span class='uvi-mid'>" + data.current.uvi + "</span>"
     } else if (data.current.uvi < 7) {
-        uv.innerHTML = "UV Index: " + "<span class='uvi-high'>" + data.current.uvi + "</span>"
+        uv.innerHTML = "UV: " + "<span class='uvi-high'>" + data.current.uvi + "</span>"
     } else {
-        uv.innerHTML = "UV Index: " + "<span class='uvi-extreme'>" + data.current.uvi + "</span>"
+        uv.innerHTML = "UV: " + "<span class='uvi-extreme'>" + data.current.uvi + "</span>"
     }
 };
 
