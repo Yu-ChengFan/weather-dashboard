@@ -34,7 +34,7 @@ let getWeather = function(lat,lon){
         displayWeather(data);
         displayForecast(data);
     })
-}
+};
 
 let getInfo = function(cityName){
     let apiURL = "https://api.openweathermap.org/geo/1.0/direct?q=" + cityName + "&limit=1&appid=" + apiKey;
@@ -52,9 +52,6 @@ let getInfo = function(cityName){
             errorEl.innerHTML = "Please enter a valid city"
         })
 };
-
-
-
 
 let displayForecast = function(data) {
     for (i = 1; i < 6; i++) {
@@ -129,7 +126,7 @@ let clearHistory = function() {
     search = [];
     localStorage.clear();
     loadSearch();
-}
+};
 
 let history = function(event) {
     if (event.target.innerHTML.includes("<")) {
@@ -138,7 +135,7 @@ let history = function(event) {
         console.log(event.target.innerHTML)
         getInfo(event.target.innerHTML)
     }
-}
+};
 
 loadSearch();
 searchFormEl.addEventListener("submit", submitSearch);
